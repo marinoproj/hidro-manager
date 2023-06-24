@@ -1,0 +1,12 @@
+[Unit]
+Description=Hidro Manager
+[Service]
+User=root
+WorkingDirectory=/root/hidro_manager
+ExecStart=/root/hidro_manager/start
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

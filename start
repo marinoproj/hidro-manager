@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar hidro_manager.jar server config.yml
